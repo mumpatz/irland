@@ -179,11 +179,11 @@
     border: none;
     border-right: 2px solid var(--green);
     color: var(--green);
-    font-family: 'Brick', sans-serif;
-    font-weight: 900;
+    font-family: 'Fragment Serif', serif;
+    font-weight: 400;
     font-size: clamp(11px, 2vw, 16px);
     text-transform: uppercase;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.1em;
     cursor: pointer;
     text-align: left;
     transition: all 0.2s;
@@ -461,6 +461,20 @@
     #splash { padding: 20px; }
     #splash .meta { left: 20px; top: 20px; }
     .route-hero { padding: 40px 20px 32px; }
+    .nav-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      overflow-x: visible;
+    }
+    .nav-tab {
+      white-space: normal;
+      border-bottom: 2px solid var(--green);
+      font-size: 12px;
+      padding: 14px 16px;
+      letter-spacing: 0.08em;
+    }
+    .nav-tab:nth-child(2) { border-right: none; }
+    .nav-tab:nth-child(3), .nav-tab:nth-child(4) { border-bottom: none; }
   }
 </style>
 </head>
