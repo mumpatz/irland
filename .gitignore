@@ -1,0 +1,8 @@
+.DS_Store
+fonts/Fragment/OTF/
+fonts/Fragment/TTF/
+fonts/Fragment/WEB/*.woff
+fonts/Fragment/Icon*
+fonts/Fragment/OTF/Icon*
+fonts/Fragment/TTF/Icon*
+fonts/Fragment/WEB/Icon*
