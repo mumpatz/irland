@@ -339,16 +339,22 @@
   .highlight-imgs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 4px;
+    gap: 12px;
+  }
+  .highlight-imgs .img-frame {
+    border: 2px solid var(--dark);
+    padding: 6px;
   }
   .highlight-imgs img {
     width: 100%;
-    height: 140px;
+    height: 160px;
     object-fit: cover;
     display: block;
   }
   @media (max-width: 600px) {
     .highlight-imgs img { height: 100px; }
+    .highlight-imgs { gap: 8px; }
+    .highlight-imgs .img-frame { padding: 4px; }
   }
 
   /* ===== AIRBNB CARDS ===== */
@@ -599,33 +605,33 @@
         <div class="highlight-item">
           <div class="highlight-header"><span class="num">01</span><span class="text">Sky Road — Küstenstraße mit Blick auf die Atlantikinseln, eine der schönsten Straßen Irlands</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1514900140332-7a8d96a7f4f0?w=400&h=280&q=80&auto=format&fit=crop" alt="Sky Road">
-            <img src="https://images.unsplash.com/photo-1574806279804-f98db91f12f2?w=400&h=280&q=80&auto=format&fit=crop" alt="Connemara Coast">
-            <img src="https://images.unsplash.com/photo-1565354300650-ccb571e045de?w=400&h=280&q=80&auto=format&fit=crop" alt="Atlantic View">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1514900140332-7a8d96a7f4f0?w=400&h=280&q=80&auto=format&fit=crop" alt="Sky Road"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1574806279804-f98db91f12f2?w=400&h=280&q=80&auto=format&fit=crop" alt="Connemara Coast"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1565354300650-ccb571e045de?w=400&h=280&q=80&auto=format&fit=crop" alt="Atlantic View"></div>
           </div>
         </div>
         <div class="highlight-item">
           <div class="highlight-header"><span class="num">02</span><span class="text">Dog's Bay — Weißer Sandstrand mitten in Connemara, türkises Wasser</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1610713590313-081b91e899eb?w=400&h=280&q=80&auto=format&fit=crop" alt="Dogs Bay">
-            <img src="https://images.unsplash.com/photo-1585063904755-d223a2b4de29?w=400&h=280&q=80&auto=format&fit=crop" alt="Dogs Bay Beach">
-            <img src="https://images.unsplash.com/photo-1575650920325-a9d77a73b0fd?w=400&h=280&q=80&auto=format&fit=crop" alt="Connemara Beach">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1610713590313-081b91e899eb?w=400&h=280&q=80&auto=format&fit=crop" alt="Dogs Bay"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1585063904755-d223a2b4de29?w=400&h=280&q=80&auto=format&fit=crop" alt="Dogs Bay Beach"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1575650920325-a9d77a73b0fd?w=400&h=280&q=80&auto=format&fit=crop" alt="Connemara Beach"></div>
           </div>
         </div>
         <div class="highlight-item">
           <div class="highlight-header"><span class="num">03</span><span class="text">Kylemore Abbey — Viktorianisches Schloss am See, umgeben von Wald</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1686586351889-3dd1d9562913?w=400&h=280&q=80&auto=format&fit=crop" alt="Kylemore Abbey">
-            <img src="https://images.unsplash.com/photo-1580766658526-06fc7de218e5?w=400&h=280&q=80&auto=format&fit=crop" alt="Kylemore Lake">
-            <img src="https://images.unsplash.com/photo-1568226757964-381fba0d3814?w=400&h=280&q=80&auto=format&fit=crop" alt="Kylemore Gardens">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1686586351889-3dd1d9562913?w=400&h=280&q=80&auto=format&fit=crop" alt="Kylemore Abbey"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1580766658526-06fc7de218e5?w=400&h=280&q=80&auto=format&fit=crop" alt="Kylemore Lake"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1568226757964-381fba0d3814?w=400&h=280&q=80&auto=format&fit=crop" alt="Kylemore Gardens"></div>
           </div>
         </div>
         <div class="highlight-item" style="border-bottom:none;">
           <div class="highlight-header"><span class="num">04</span><span class="text">Killary Fjord — Einziger Fjord Irlands, Boot oder Kayak</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1730080480931-1a44ff8efae8?w=400&h=280&q=80&auto=format&fit=crop" alt="Killary Fjord">
-            <img src="https://images.unsplash.com/photo-1580217640279-dc93b5f026de?w=400&h=280&q=80&auto=format&fit=crop" alt="Connemara Mountains">
-            <img src="https://images.unsplash.com/photo-1693347423727-62bd4000360b?w=400&h=280&q=80&auto=format&fit=crop" alt="Fjord View">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1730080480931-1a44ff8efae8?w=400&h=280&q=80&auto=format&fit=crop" alt="Killary Fjord"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1580217640279-dc93b5f026de?w=400&h=280&q=80&auto=format&fit=crop" alt="Connemara Mountains"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1693347423727-62bd4000360b?w=400&h=280&q=80&auto=format&fit=crop" alt="Fjord View"></div>
           </div>
         </div>
       </div>
@@ -689,33 +695,33 @@
         <div class="highlight-item">
           <div class="highlight-header"><span class="num">01</span><span class="text">Healy Pass — Dramatische Bergstraße durch die Caha Mountains</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1596888973505-0925bdcb8b3b?w=400&h=280&q=80&auto=format&fit=crop" alt="Healy Pass">
-            <img src="https://images.unsplash.com/photo-1666955390953-6a29b7e0a936?w=400&h=280&q=80&auto=format&fit=crop" alt="Kerry Mountains">
-            <img src="https://images.unsplash.com/photo-1697650371467-32d9e9924bc7?w=400&h=280&q=80&auto=format&fit=crop" alt="Caha Mountains">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1596888973505-0925bdcb8b3b?w=400&h=280&q=80&auto=format&fit=crop" alt="Healy Pass"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1666955390953-6a29b7e0a936?w=400&h=280&q=80&auto=format&fit=crop" alt="Kerry Mountains"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1697650371467-32d9e9924bc7?w=400&h=280&q=80&auto=format&fit=crop" alt="Caha Mountains"></div>
           </div>
         </div>
         <div class="highlight-item">
           <div class="highlight-header"><span class="num">02</span><span class="text">Ring of Kerry — Ikonische Küstenstraße, 179 km Atlantik-Panorama</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1596039677662-90c00fbde9b5?w=400&h=280&q=80&auto=format&fit=crop" alt="Ring of Kerry">
-            <img src="https://images.unsplash.com/photo-1560606889-448ece1ec1de?w=400&h=280&q=80&auto=format&fit=crop" alt="Kerry Coast">
-            <img src="https://images.unsplash.com/photo-1588963940468-9e6e4d202209?w=400&h=280&q=80&auto=format&fit=crop" alt="Kerry Panorama">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1596039677662-90c00fbde9b5?w=400&h=280&q=80&auto=format&fit=crop" alt="Ring of Kerry"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1560606889-448ece1ec1de?w=400&h=280&q=80&auto=format&fit=crop" alt="Kerry Coast"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1588963940468-9e6e4d202209?w=400&h=280&q=80&auto=format&fit=crop" alt="Kerry Panorama"></div>
           </div>
         </div>
         <div class="highlight-item">
           <div class="highlight-header"><span class="num">03</span><span class="text">Killarney Nationalpark — Seen, Wälder, Ross Castle</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1671450866306-ce973163e127?w=400&h=280&q=80&auto=format&fit=crop" alt="Killarney">
-            <img src="https://images.unsplash.com/photo-1545066230-784a12d9bd2f?w=400&h=280&q=80&auto=format&fit=crop" alt="Killarney Lakes">
-            <img src="https://images.unsplash.com/photo-1576490483205-f7aea61c3b2d?w=400&h=280&q=80&auto=format&fit=crop" alt="Ross Castle">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1671450866306-ce973163e127?w=400&h=280&q=80&auto=format&fit=crop" alt="Killarney"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1545066230-784a12d9bd2f?w=400&h=280&q=80&auto=format&fit=crop" alt="Killarney Lakes"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1576490483205-f7aea61c3b2d?w=400&h=280&q=80&auto=format&fit=crop" alt="Ross Castle"></div>
           </div>
         </div>
         <div class="highlight-item" style="border-bottom:none;">
           <div class="highlight-header"><span class="num">04</span><span class="text">Kenmare — Bunte Pubs, Gourmet-Restaurants, Steinkreis</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1583680410317-0b9f91924673?w=400&h=280&q=80&auto=format&fit=crop" alt="Kenmare">
-            <img src="https://images.unsplash.com/photo-1671450866364-c5d90ee3ca60?w=400&h=280&q=80&auto=format&fit=crop" alt="Kerry Town">
-            <img src="https://images.unsplash.com/photo-1599266798999-30831c207198?w=400&h=280&q=80&auto=format&fit=crop" alt="Kerry Village">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1583680410317-0b9f91924673?w=400&h=280&q=80&auto=format&fit=crop" alt="Kenmare"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1671450866364-c5d90ee3ca60?w=400&h=280&q=80&auto=format&fit=crop" alt="Kerry Town"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1599266798999-30831c207198?w=400&h=280&q=80&auto=format&fit=crop" alt="Kerry Village"></div>
           </div>
         </div>
       </div>
@@ -771,33 +777,33 @@
         <div class="highlight-item">
           <div class="highlight-header"><span class="num">01</span><span class="text">Slea Head Drive — Spektakulärste Küstenstraße Irlands, Klippen und Beehive Huts</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1695752800683-d44aad768baf?w=400&h=280&q=80&auto=format&fit=crop" alt="Slea Head">
-            <img src="https://images.unsplash.com/photo-1695755191616-5df071768672?w=400&h=280&q=80&auto=format&fit=crop" alt="Dingle Cliffs">
-            <img src="https://images.unsplash.com/photo-1700286129109-dcbe535be3d9?w=400&h=280&q=80&auto=format&fit=crop" alt="Slea Head Coast">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1695752800683-d44aad768baf?w=400&h=280&q=80&auto=format&fit=crop" alt="Slea Head"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1695755191616-5df071768672?w=400&h=280&q=80&auto=format&fit=crop" alt="Dingle Cliffs"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1700286129109-dcbe535be3d9?w=400&h=280&q=80&auto=format&fit=crop" alt="Slea Head Coast"></div>
           </div>
         </div>
         <div class="highlight-item">
           <div class="highlight-header"><span class="num">02</span><span class="text">Connor Pass — Höchster Bergpass der Dingle-Halbinsel</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1695756133141-e72a22bc9594?w=400&h=280&q=80&auto=format&fit=crop" alt="Connor Pass">
-            <img src="https://images.unsplash.com/photo-1695753204322-d8336aa1d252?w=400&h=280&q=80&auto=format&fit=crop" alt="Dingle Mountains">
-            <img src="https://images.unsplash.com/photo-1601805825201-35dcda1a56f3?w=400&h=280&q=80&auto=format&fit=crop" alt="Mountain View">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1695756133141-e72a22bc9594?w=400&h=280&q=80&auto=format&fit=crop" alt="Connor Pass"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1695753204322-d8336aa1d252?w=400&h=280&q=80&auto=format&fit=crop" alt="Dingle Mountains"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1601805825201-35dcda1a56f3?w=400&h=280&q=80&auto=format&fit=crop" alt="Mountain View"></div>
           </div>
         </div>
         <div class="highlight-item">
           <div class="highlight-header"><span class="num">03</span><span class="text">Great Blasket Island — Verlassene Insel, Bootsfahrt, Wanderungen</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1608222755569-1df12cf8b24c?w=400&h=280&q=80&auto=format&fit=crop" alt="Blasket Islands">
-            <img src="https://images.unsplash.com/photo-1601805824948-a227e50cbea3?w=400&h=280&q=80&auto=format&fit=crop" alt="Blasket View">
-            <img src="https://images.unsplash.com/photo-1601805825333-f0aabce07f76?w=400&h=280&q=80&auto=format&fit=crop" alt="Blasket Coast">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1608222755569-1df12cf8b24c?w=400&h=280&q=80&auto=format&fit=crop" alt="Blasket Islands"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1601805824948-a227e50cbea3?w=400&h=280&q=80&auto=format&fit=crop" alt="Blasket View"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1601805825333-f0aabce07f76?w=400&h=280&q=80&auto=format&fit=crop" alt="Blasket Coast"></div>
           </div>
         </div>
         <div class="highlight-item" style="border-bottom:none;">
           <div class="highlight-header"><span class="num">04</span><span class="text">Dingle Town — Bunte Pubs, Delfin Fungie, Live Musik</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1601805824284-7f191dea8837?w=400&h=280&q=80&auto=format&fit=crop" alt="Dingle Town">
-            <img src="https://images.unsplash.com/photo-1695756132887-beaa7f087709?w=400&h=280&q=80&auto=format&fit=crop" alt="Dingle Harbor">
-            <img src="https://images.unsplash.com/photo-1601805825201-35dcda1a56f3?w=400&h=280&q=80&auto=format&fit=crop" alt="Dingle Pub">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1601805824284-7f191dea8837?w=400&h=280&q=80&auto=format&fit=crop" alt="Dingle Town"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1695756132887-beaa7f087709?w=400&h=280&q=80&auto=format&fit=crop" alt="Dingle Harbor"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1601805825201-35dcda1a56f3?w=400&h=280&q=80&auto=format&fit=crop" alt="Dingle Pub"></div>
           </div>
         </div>
       </div>
@@ -845,33 +851,33 @@
         <div class="highlight-item">
           <div class="highlight-header"><span class="num">01</span><span class="text">Slieve League Klippen — Dreimal höher als die Cliffs of Moher, weniger Touristen</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1717097805127-8c23ce54f140?w=400&h=280&q=80&auto=format&fit=crop" alt="Slieve League">
-            <img src="https://images.unsplash.com/photo-1528201500390-4ba8aac61b5e?w=400&h=280&q=80&auto=format&fit=crop" alt="Donegal Cliffs">
-            <img src="https://images.unsplash.com/photo-1628246935293-e68479e46589?w=400&h=280&q=80&auto=format&fit=crop" alt="Slieve League Path">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1717097805127-8c23ce54f140?w=400&h=280&q=80&auto=format&fit=crop" alt="Slieve League"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1528201500390-4ba8aac61b5e?w=400&h=280&q=80&auto=format&fit=crop" alt="Donegal Cliffs"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1628246935293-e68479e46589?w=400&h=280&q=80&auto=format&fit=crop" alt="Slieve League Path"></div>
           </div>
         </div>
         <div class="highlight-item">
           <div class="highlight-header"><span class="num">02</span><span class="text">Malin Head — Nördlichster Punkt Irlands, dramatische Felsformationen</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1690970369550-629ab8e55443?w=400&h=280&q=80&auto=format&fit=crop" alt="Malin Head">
-            <img src="https://images.unsplash.com/photo-1560849380-09986bff4797?w=400&h=280&q=80&auto=format&fit=crop" alt="Donegal Coast">
-            <img src="https://images.unsplash.com/photo-1550514704-be6779ac36e7?w=400&h=280&q=80&auto=format&fit=crop" alt="Northern Ireland Coast">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1690970369550-629ab8e55443?w=400&h=280&q=80&auto=format&fit=crop" alt="Malin Head"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1560849380-09986bff4797?w=400&h=280&q=80&auto=format&fit=crop" alt="Donegal Coast"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1550514704-be6779ac36e7?w=400&h=280&q=80&auto=format&fit=crop" alt="Northern Ireland Coast"></div>
           </div>
         </div>
         <div class="highlight-item">
           <div class="highlight-header"><span class="num">03</span><span class="text">Glenveagh Nationalpark — Schloss, Gärten, Rotwild, endlose Wanderungen</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1690971815939-e7d497da0dab?w=400&h=280&q=80&auto=format&fit=crop" alt="Glenveagh">
-            <img src="https://images.unsplash.com/photo-1690971811293-a53e29ce843a?w=400&h=280&q=80&auto=format&fit=crop" alt="Glenveagh Park">
-            <img src="https://images.unsplash.com/photo-1690971817344-852a63a4e235?w=400&h=280&q=80&auto=format&fit=crop" alt="Glenveagh Castle">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1690971815939-e7d497da0dab?w=400&h=280&q=80&auto=format&fit=crop" alt="Glenveagh"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1690971811293-a53e29ce843a?w=400&h=280&q=80&auto=format&fit=crop" alt="Glenveagh Park"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1690971817344-852a63a4e235?w=400&h=280&q=80&auto=format&fit=crop" alt="Glenveagh Castle"></div>
           </div>
         </div>
         <div class="highlight-item" style="border-bottom:none;">
           <div class="highlight-header"><span class="num">04</span><span class="text">Ardara — Tweed-Dorf, traditionelle Pubs, Surfstrände in der Nähe</span></div>
           <div class="highlight-imgs">
-            <img src="https://images.unsplash.com/photo-1565215338952-11fd5391e786?w=400&h=280&q=80&auto=format&fit=crop" alt="Ardara">
-            <img src="https://images.unsplash.com/photo-1629567523314-fdedb63d5afd?w=400&h=280&q=80&auto=format&fit=crop" alt="Donegal Beach">
-            <img src="https://images.unsplash.com/photo-1645373590904-ded2e796cc94?w=400&h=280&q=80&auto=format&fit=crop" alt="Donegal Surf">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1565215338952-11fd5391e786?w=400&h=280&q=80&auto=format&fit=crop" alt="Ardara"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1629567523314-fdedb63d5afd?w=400&h=280&q=80&auto=format&fit=crop" alt="Donegal Beach"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1645373590904-ded2e796cc94?w=400&h=280&q=80&auto=format&fit=crop" alt="Donegal Surf"></div>
           </div>
         </div>
       </div>
