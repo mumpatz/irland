@@ -293,6 +293,15 @@
   .leaflet-control-zoom { display: none; }
   .leaflet-control-attribution { display: none !important; }
 
+  /* ===== ROUTE HERO IMAGE ===== */
+  .route-hero-img {
+    width: 100%;
+    height: 60vh;
+    min-height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+
   /* ===== HIGHLIGHTS ===== */
   .highlights-grid {
     display: grid;
@@ -322,6 +331,19 @@
     padding-top: 8px;
     flex: 1;
     text-align: left;
+  }
+  .highlight-item .highlight-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    margin-top: 16px;
+    filter: saturate(0.7);
+  }
+  .highlight-item .highlight-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 
   /* ===== AIRBNB CARDS ===== */
@@ -555,6 +577,8 @@
       <div class="base-info">Base: Roundstone / Clifden — 8 Nächte</div>
     </div>
 
+    <img class="route-hero-img" src="https://images.unsplash.com/photo-1605973599448-07ae831c0cec?w=1200&q=80&auto=format&fit=crop" alt="Connemara Landscape">
+
     <div class="map-container section-dark" id="map-0"></div>
 
     <div class="marquee section-pink" style="border-color: var(--dark);">
@@ -567,10 +591,10 @@
     <section class="section-green section-pad">
       <div class="section-subtitle" style="">Highlights</div>
       <div class="highlights-grid" style="border-color: var(--dark);">
-        <div class="highlight-item"><span class="num">01</span><span class="text">Sky Road — Küstenstraße mit Blick auf die Atlantikinseln, eine der schönsten Straßen Irlands</span></div>
-        <div class="highlight-item"><span class="num">02</span><span class="text">Dog's Bay — Weißer Sandstrand mitten in Connemara, türkises Wasser</span></div>
-        <div class="highlight-item"><span class="num">03</span><span class="text">Kylemore Abbey — Viktorianisches Schloss am See, umgeben von Wald</span></div>
-        <div class="highlight-item" style="border-bottom:none;"><span class="num">04</span><span class="text">Killary Fjord — Einziger Fjord Irlands, Boot oder Kayak</span></div>
+        <div class="highlight-item"><span class="num">01</span><div class="highlight-content"><span class="text">Sky Road — Küstenstraße mit Blick auf die Atlantikinseln, eine der schönsten Straßen Irlands</span><img class="highlight-img" src="https://images.unsplash.com/photo-1555364555-e907cbaa61b6?w=800&q=80&auto=format&fit=crop" alt="Sky Road"></div></div>
+        <div class="highlight-item"><span class="num">02</span><div class="highlight-content"><span class="text">Dog's Bay — Weißer Sandstrand mitten in Connemara, türkises Wasser</span><img class="highlight-img" src="https://images.unsplash.com/photo-1564387069416-d5fd75986a5a?w=800&q=80&auto=format&fit=crop" alt="Dogs Bay"></div></div>
+        <div class="highlight-item"><span class="num">03</span><div class="highlight-content"><span class="text">Kylemore Abbey — Viktorianisches Schloss am See, umgeben von Wald</span><img class="highlight-img" src="https://images.unsplash.com/photo-1686586351889-3dd1d9562913?w=800&q=80&auto=format&fit=crop" alt="Kylemore Abbey"></div></div>
+        <div class="highlight-item" style="border-bottom:none;"><span class="num">04</span><div class="highlight-content"><span class="text">Killary Fjord — Einziger Fjord Irlands, Boot oder Kayak</span><img class="highlight-img" src="https://images.unsplash.com/photo-T5DAAfCGGQg?w=800&q=80&auto=format&fit=crop" alt="Killary Fjord"></div></div>
       </div>
     </section>
 
@@ -615,6 +639,8 @@
       <div class="base-info">Base: Kenmare — 8 Nächte</div>
     </div>
 
+    <img class="route-hero-img" src="https://images.unsplash.com/photo-1697649943968-fc89fa607ebf?w=1200&q=80&auto=format&fit=crop" alt="Kerry Landscape">
+
     <div class="map-container section-dark" id="map-1"></div>
 
     <div class="marquee section-pink" style="border-color: var(--dark);">
@@ -627,10 +653,10 @@
     <section class="section-green section-pad">
       <div class="section-subtitle" style="">Highlights</div>
       <div class="highlights-grid">
-        <div class="highlight-item"><span class="num">01</span><span class="text">Healy Pass — Dramatische Bergstraße durch die Caha Mountains</span></div>
-        <div class="highlight-item"><span class="num">02</span><span class="text">Ring of Kerry — Ikonische Küstenstraße, 179 km Atlantik-Panorama</span></div>
-        <div class="highlight-item"><span class="num">03</span><span class="text">Killarney Nationalpark — Seen, Wälder, Ross Castle</span></div>
-        <div class="highlight-item" style="border-bottom:none;"><span class="num">04</span><span class="text">Kenmare — Bunte Pubs, Gourmet-Restaurants, Steinkreis</span></div>
+        <div class="highlight-item"><span class="num">01</span><div class="highlight-content"><span class="text">Healy Pass — Dramatische Bergstraße durch die Caha Mountains</span><img class="highlight-img" src="https://images.unsplash.com/photo-1666955390953-6a29b7e0a936?w=800&q=80&auto=format&fit=crop" alt="Healy Pass"></div></div>
+        <div class="highlight-item"><span class="num">02</span><div class="highlight-content"><span class="text">Ring of Kerry — Ikonische Küstenstraße, 179 km Atlantik-Panorama</span><img class="highlight-img" src="https://images.unsplash.com/photo-1562507886-7b3bdc16d57f?w=800&q=80&auto=format&fit=crop" alt="Ring of Kerry"></div></div>
+        <div class="highlight-item"><span class="num">03</span><div class="highlight-content"><span class="text">Killarney Nationalpark — Seen, Wälder, Ross Castle</span><img class="highlight-img" src="https://images.unsplash.com/photo-1671450866306-ce973163e127?w=800&q=80&auto=format&fit=crop" alt="Killarney National Park"></div></div>
+        <div class="highlight-item" style="border-bottom:none;"><span class="num">04</span><div class="highlight-content"><span class="text">Kenmare — Bunte Pubs, Gourmet-Restaurants, Steinkreis</span><img class="highlight-img" src="https://images.unsplash.com/photo-1583680410317-0b9f91924673?w=800&q=80&auto=format&fit=crop" alt="Kenmare"></div></div>
       </div>
     </section>
 
@@ -667,6 +693,8 @@
       <div class="base-info">Base: Dingle / Ventry — 8 Nächte</div>
     </div>
 
+    <img class="route-hero-img" src="https://images.unsplash.com/photo-1695756132887-beaa7f087709?w=1200&q=80&auto=format&fit=crop" alt="Dingle Peninsula">
+
     <div class="map-container section-dark" id="map-2"></div>
 
     <div class="marquee section-pink" style="border-color: var(--dark);">
@@ -679,10 +707,10 @@
     <section class="section-green section-pad">
       <div class="section-subtitle" style="">Highlights</div>
       <div class="highlights-grid">
-        <div class="highlight-item"><span class="num">01</span><span class="text">Slea Head Drive — Spektakulärste Küstenstraße Irlands, Klippen und Beehive Huts</span></div>
-        <div class="highlight-item"><span class="num">02</span><span class="text">Connor Pass — Höchster Bergpass der Dingle-Halbinsel</span></div>
-        <div class="highlight-item"><span class="num">03</span><span class="text">Great Blasket Island — Verlassene Insel, Bootsfahrt, Wanderungen</span></div>
-        <div class="highlight-item" style="border-bottom:none;"><span class="num">04</span><span class="text">Dingle Town — Bunte Pubs, Delfin Fungie, Live Musik</span></div>
+        <div class="highlight-item"><span class="num">01</span><div class="highlight-content"><span class="text">Slea Head Drive — Spektakulärste Küstenstraße Irlands, Klippen und Beehive Huts</span><img class="highlight-img" src="https://images.unsplash.com/photo-1695752800683-d44aad768baf?w=800&q=80&auto=format&fit=crop" alt="Slea Head Drive"></div></div>
+        <div class="highlight-item"><span class="num">02</span><div class="highlight-content"><span class="text">Connor Pass — Höchster Bergpass der Dingle-Halbinsel</span><img class="highlight-img" src="https://images.unsplash.com/photo-1695756133141-e72a22bc9594?w=800&q=80&auto=format&fit=crop" alt="Connor Pass"></div></div>
+        <div class="highlight-item"><span class="num">03</span><div class="highlight-content"><span class="text">Great Blasket Island — Verlassene Insel, Bootsfahrt, Wanderungen</span><img class="highlight-img" src="https://images.unsplash.com/photo-1608222755569-1df12cf8b24c?w=800&q=80&auto=format&fit=crop" alt="Blasket Islands"></div></div>
+        <div class="highlight-item" style="border-bottom:none;"><span class="num">04</span><div class="highlight-content"><span class="text">Dingle Town — Bunte Pubs, Delfin Fungie, Live Musik</span><img class="highlight-img" src="https://images.unsplash.com/photo-1601805824284-7f191dea8837?w=800&q=80&auto=format&fit=crop" alt="Dingle Town"></div></div>
       </div>
     </section>
 
@@ -711,6 +739,8 @@
       <div class="base-info">Base: Ardara / Dunfanaghy — 8 Nächte</div>
     </div>
 
+    <img class="route-hero-img" src="https://images.unsplash.com/photo-1535480195937-4075d620b306?w=1200&q=80&auto=format&fit=crop" alt="Donegal Landscape">
+
     <div class="map-container section-dark" id="map-3"></div>
 
     <div class="marquee section-pink" style="border-color: var(--dark);">
@@ -723,10 +753,10 @@
     <section class="section-green section-pad">
       <div class="section-subtitle" style="">Highlights</div>
       <div class="highlights-grid">
-        <div class="highlight-item"><span class="num">01</span><span class="text">Slieve League Klippen — Dreimal höher als die Cliffs of Moher, weniger Touristen</span></div>
-        <div class="highlight-item"><span class="num">02</span><span class="text">Malin Head — Nördlichster Punkt Irlands, dramatische Felsformationen</span></div>
-        <div class="highlight-item"><span class="num">03</span><span class="text">Glenveagh Nationalpark — Schloss, Gärten, Rotwild, endlose Wanderungen</span></div>
-        <div class="highlight-item" style="border-bottom:none;"><span class="num">04</span><span class="text">Ardara — Tweed-Dorf, traditionelle Pubs, Surfstrände in der Nähe</span></div>
+        <div class="highlight-item"><span class="num">01</span><div class="highlight-content"><span class="text">Slieve League Klippen — Dreimal höher als die Cliffs of Moher, weniger Touristen</span><img class="highlight-img" src="https://images.unsplash.com/photo-1717097805127-8c23ce54f140?w=800&q=80&auto=format&fit=crop" alt="Slieve League"></div></div>
+        <div class="highlight-item"><span class="num">02</span><div class="highlight-content"><span class="text">Malin Head — Nördlichster Punkt Irlands, dramatische Felsformationen</span><img class="highlight-img" src="https://images.unsplash.com/photo-PlgAhImZN5w?w=800&q=80&auto=format&fit=crop" alt="Malin Head"></div></div>
+        <div class="highlight-item"><span class="num">03</span><div class="highlight-content"><span class="text">Glenveagh Nationalpark — Schloss, Gärten, Rotwild, endlose Wanderungen</span><img class="highlight-img" src="https://images.unsplash.com/photo-1690971815939-e7d497da0dab?w=800&q=80&auto=format&fit=crop" alt="Glenveagh"></div></div>
+        <div class="highlight-item" style="border-bottom:none;"><span class="num">04</span><div class="highlight-content"><span class="text">Ardara — Tweed-Dorf, traditionelle Pubs, Surfstrände in der Nähe</span><img class="highlight-img" src="https://images.unsplash.com/photo-1565215338952-11fd5391e786?w=800&q=80&auto=format&fit=crop" alt="Ardara Coast"></div></div>
       </div>
     </section>
 
